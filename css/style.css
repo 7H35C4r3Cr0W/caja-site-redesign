@@ -531,3 +531,29 @@ h3 { font-size: 20px; font-weight: 700; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ═══════════ Ippon Toss mini-game ═══════════
+   The game (js/judo-game.js) styles itself through these --jg-*
+   tokens, so it wears the site's earthen palette. */
+
+:root {
+  --jg-accent: var(--accent);
+  --jg-accent-text: var(--accent-text);
+  --jg-surface: var(--card);
+  --jg-text: var(--ink);
+  --jg-muted: var(--ink-soft);
+  --jg-border: var(--line);
+  --jg-radius: var(--radius);
+  --jg-gold: var(--gold);
+  --jg-font-body: var(--font-body);
+  --jg-font-display: var(--font-display);
+  --jg-shadow: var(--shadow-md);
+}
+
+/* left-aligned like every other section's content; capped so the
+   canvas doesn't letterbox on wide screens */
+.game-wrap { max-width: 880px; }
+.game-wrap .jg-frame { border-color: var(--line); }
+
+/* anchor jumps must clear the sticky header at every breakpoint */
+.section { scroll-margin-top: 84px; }

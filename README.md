@@ -11,7 +11,7 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│ HEADER (sticky)   CAJA 柔 | Programs Flashcards Etiquette │
+│ HEADER (sticky)   CAJA 柔 | Programs Flashcards Game Etiquette │
 │                          Instructors About Camp | [CTA]  │
 ├──────────────────────────────────────────────────────────┤
 │ HERO    headline + "first class free" CTA + quick facts  │
@@ -20,6 +20,9 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 │ PROGRAMS      [ Kids Tue/Thu 6–7p ] [ Adults M–Sa ]      │
 ├──────────────────────────────────────────────────────────┤
 │ FLASHCARDS    copy + app screenshots → live app link     │
+├──────────────────────────────────────────────────────────┤
+│ GAME          "Ippon Toss" mini-game (shared with the    │
+│               flashcards app — js/judo-game.js)          │
 ├──────────────────────────────────────────────────────────┤
 │ ETIQUETTE     6 cards: bow / gi / hygiene / mat /        │
 │               sensei & sempai / the path                 │
