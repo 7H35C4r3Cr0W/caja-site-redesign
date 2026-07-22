@@ -21,7 +21,7 @@
   // reveal-on-scroll for section-level blocks
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var targets = document.querySelectorAll(
-    ".section-head, .program-card, .eti-card, .staff-card, .contact-card, .split-copy, .split-media, .camp-card, .game-wrap, .team-banner, .spotlight, .resource-card"
+    ".section-head, .program-card, .eti-card, .staff-card, .contact-card, .split-copy, .split-media, .camp-card, .game-wrap, .team-banner, .spotlight, .resource-card, .rank-group"
   );
   targets.forEach(function (el) { el.classList.add("reveal"); });
 
