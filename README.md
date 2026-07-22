@@ -60,8 +60,7 @@ Single-page for the sample; each section can later split into its own page
 
 - Bios for instructors without one yet (Dana Rucker, Brian Dillman, and the newer roster
   additions have photos now but no bio copy)
-- Photos for Paul Elminowski, Jeff Carroll, Sensei Andy, Mike Casper, and Camilla Kaluzny
-  (still initials placeholders)
+- Photos for Sensei Andy and Mike Casper (still initials placeholders)
 - Real dojo photography for the hero/about sections
 - Belt-testing schedule
 - Registration / contact form (currently mailto/tel links)
