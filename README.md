@@ -11,8 +11,9 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│ HEADER (sticky)  CAJA 柔 | Programs Flashcards Game Etiquette │
-│                  Instructors About Camp Community | [CTA] │
+│ HEADER (sticky)  CAJA 柔 | Programs Flashcards Game      │
+│                  Etiquette Instructors About Camp        │
+│                  Community | [CTA]                       │
 ├──────────────────────────────────────────────────────────┤
 │ HERO    headline + "first class free" CTA + quick facts  │
 │         floating technique-animation cards               │
@@ -27,15 +28,15 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 │ ETIQUETTE     6 cards: bow / gi / hygiene / mat /        │
 │               sensei & sempai / the path                 │
 ├──────────────────────────────────────────────────────────┤
-│ INSTRUCTORS   team photo + spotlight + head coach        │
-│               feature + 14 instructor cards (11 photos)  │
+│ INSTRUCTORS   team photo + spotlight + 14 instructor     │
+│               cards, 11 with photos (head coach leads)   │
 ├──────────────────────────────────────────────────────────┤
 │ ABOUT         mission + Kanō quote + technique tiles     │
 ├──────────────────────────────────────────────────────────┤
 │ CAMP          Greatest Camp on Earth dark feature card   │
 ├──────────────────────────────────────────────────────────┤
-│ COMMUNITY     sister clubs, judo calendar, Facebook       │
-│               pages/group                                 │
+│ COMMUNITY     sister clubs, judo calendar, Facebook      │
+│               pages/group                                │
 ├──────────────────────────────────────────────────────────┤
 │ VISIT         address / phone / email / camp-scheduling  │
 ├──────────────────────────────────────────────────────────┤
@@ -58,8 +59,8 @@ Single-page for the sample; each section can later split into its own page
 
 ## To fill in later
 
-- Bios for instructors without one yet (Dana Rucker, Brian Dillman, and the newer roster
-  additions have photos now but no bio copy)
+- Bios for everyone except the head coach — most of the roster has a photo now, but only
+  Pat Szrejter has bio copy
 - Photos for Sensei Andy, Mike Casper, and Javier Guédez (still initials placeholders)
 - Real dojo photography for the hero/about sections
 - Belt-testing schedule
