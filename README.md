@@ -11,8 +11,8 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│ HEADER (sticky)   CAJA 柔 | Programs Flashcards Game Etiquette │
-│                          Instructors About Camp | [CTA]  │
+│ HEADER (sticky)  CAJA 柔 | Programs Flashcards Game Etiquette │
+│                  Instructors About Camp Community | [CTA] │
 ├──────────────────────────────────────────────────────────┤
 │ HERO    headline + "first class free" CTA + quick facts  │
 │         floating technique-animation cards               │
@@ -27,13 +27,17 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 │ ETIQUETTE     6 cards: bow / gi / hygiene / mat /        │
 │               sensei & sempai / the path                 │
 ├──────────────────────────────────────────────────────────┤
-│ INSTRUCTORS   head coach feature + 8 instructor cards    │
+│ INSTRUCTORS   team photo + spotlight + head coach        │
+│               feature + 15 instructor cards (10 photos)  │
 ├──────────────────────────────────────────────────────────┤
 │ ABOUT         mission + Kanō quote + technique tiles     │
 ├──────────────────────────────────────────────────────────┤
 │ CAMP          Greatest Camp on Earth dark feature card   │
 ├──────────────────────────────────────────────────────────┤
-│ VISIT         address / phone / email cards              │
+│ COMMUNITY     sister clubs, judo calendar, Facebook       │
+│               pages/group                                 │
+├──────────────────────────────────────────────────────────┤
+│ VISIT         address / phone / email / camp-scheduling  │
 ├──────────────────────────────────────────────────────────┤
 │ FOOTER                                                   │
 └──────────────────────────────────────────────────────────┘
@@ -49,12 +53,17 @@ Single-page for the sample; each section can later split into its own page
 - **Camp section** — greatestcamp.com (June 24–26 2027, Javier Guédez headline)
 - **Flashcards** — https://7h35c4r3cr0w.github.io/Judo-Throw-Flashcards/ (linked live app,
   screenshots in `images/`)
+- **Instructor & team photos** — courtesy of the Judo Caja community (`images/instructors/`, `images/team-photo.jpg`)
+- **Community section** — sister clubs, Southeastern Judo Planner, and Facebook links
 
 ## To fill in later
 
-- Instructor photos + bios (placeholders show initials)
+- Bios for instructors without one yet (Dana Rucker, Brian Dillman, and the newer roster
+  additions have photos now but no bio copy)
+- Photos for Paul Elminowski, Jeff Carroll, Sensei Andy, Mike Casper, and Camilla Kaluzny
+  (still initials placeholders)
 - Real dojo photography for the hero/about sections
-- Belt-testing schedule, Southeastern Judo Planner calendar embed
+- Belt-testing schedule
 - Registration / contact form (currently mailto/tel links)
 
 ## Run it
