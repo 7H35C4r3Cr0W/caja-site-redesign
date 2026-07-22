@@ -12,7 +12,7 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 ```
 ┌──────────────────────────────────────────────────────────┐
 │ HEADER (sticky)  CAJA 柔 | Programs Flashcards Game      │
-│                  Etiquette Instructors About Camp        │
+│                  Etiquette Ranks Instructors About Camp  │
 │                  Community | [CTA]                       │
 ├──────────────────────────────────────────────────────────┤
 │ HERO    headline + "first class free" CTA + quick facts  │
@@ -28,8 +28,10 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 │ ETIQUETTE     6 cards: bow / gi / hygiene / mat /        │
 │               sensei & sempai / the path                 │
 ├──────────────────────────────────────────────────────────┤
-│ INSTRUCTORS   team photo + spotlight + 14 instructor     │
-│               cards, 11 with photos (head coach leads)   │
+│ RANKS         kyu & dan belt chart on parchment cards    │
+├──────────────────────────────────────────────────────────┤
+│ INSTRUCTORS   team photo + spotlight + 20 instructor     │
+│               cards, 14 with photos (head coach leads)   │
 ├──────────────────────────────────────────────────────────┤
 │ ABOUT         mission + Kanō quote + technique tiles     │
 ├──────────────────────────────────────────────────────────┤
@@ -55,13 +57,15 @@ Single-page for the sample; each section can later split into its own page
 - **Flashcards** — https://7h35c4r3cr0w.github.io/Judo-Throw-Flashcards/ (linked live app,
   screenshots in `images/`)
 - **Instructor & team photos** — courtesy of the Judo Caja community (`images/instructors/`, `images/team-photo.jpg`)
+- **Instructor roster (names & ranks)** — the club's instructor spreadsheet (July 2026)
 - **Community section** — sister clubs, Southeastern Judo Planner, and Facebook links
 
 ## To fill in later
 
 - Bios for everyone except the head coach — most of the roster has a photo now, but only
-  Pat Szrejter has bio copy
-- Photos for Sensei Andy, Mike Casper, and Javier Guédez (still initials placeholders)
+  Patrick Szrejter has bio copy
+- Photos for Edward Shirey, Jonathan Welton, Eric Ly, Andrew Greenburg, Dustin Kirkley,
+  and Dalton Farriss (initials placeholders)
 - Real dojo photography for the hero/about sections
 - Belt-testing schedule
 - Registration / contact form (currently mailto/tel links)
