@@ -31,7 +31,7 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 │ RANKS         kyu & dan belt chart on parchment cards    │
 ├──────────────────────────────────────────────────────────┤
 │ INSTRUCTORS   team photo + spotlight + 20 instructor     │
-│               cards, 14 with photos (head coach leads)   │
+│               cards, all with photos (head coach leads)  │
 ├──────────────────────────────────────────────────────────┤
 │ ABOUT         mission + Kanō quote + technique tiles     │
 ├──────────────────────────────────────────────────────────┤
@@ -62,10 +62,8 @@ Single-page for the sample; each section can later split into its own page
 
 ## To fill in later
 
-- Bios for everyone except the head coach — most of the roster has a photo now, but only
+- Bios for everyone except the head coach — the whole roster has photos now, but only
   Patrick Szrejter has bio copy
-- Photos for Edward Shirey, Jonathan Welton, Eric Ly, Andrew Greenburg, Dustin Kirkley,
-  and Dalton Farriss (initials placeholders)
 - Real dojo photography for the hero/about sections
 - Belt-testing schedule
 - Registration / contact form (currently mailto/tel links)

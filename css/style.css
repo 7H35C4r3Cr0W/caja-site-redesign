@@ -11,12 +11,13 @@
   --card: #2d251d;         /* walnut card */
   --ink: #eae1d1;          /* warm bone text */
   --ink-soft: #c2b6a1;
-  --muted: #93876f;
+  --muted: #a0947b;
   --line: #3e3428;
   --accent: #bf5b3d;       /* iron-oxide terracotta */
   --accent-deep: #93402a;
   --accent-text: #e39877;  /* accent used AS text on dark panels */
   --accent-soft: rgba(191, 91, 61, 0.14);
+  --paper-glass: rgba(33, 27, 21, 0.88); /* sticky-header ground; color-mix fallback */
   --gold: #c9a25a;         /* ochre */
   --moss: #8a9364;         /* sage/moss secondary */
   --parchment: #f0e7d4;    /* the one light surface: animation panels */
@@ -82,12 +83,28 @@ h3 { font-size: 20px; font-weight: 700; }
 }
 .eyebrow.light { color: #d9c9a8; }
 
+/* keyboard users get a way past the ten header links */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 100;
+  background: linear-gradient(180deg, var(--accent), var(--accent-deep));
+  color: #f7efe0;
+  padding: 10px 16px;
+  border-radius: 0 0 10px 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus { top: 0; }
+
 /* ═══════════ Header ═══════════ */
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
+  background: var(--paper-glass);
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -153,6 +170,7 @@ h3 { font-size: 20px; font-weight: 700; }
 
 .nav-toggle {
   display: none;
+  flex: none; /* never let the brand crush the burger on 320px phones */
   flex-direction: column;
   justify-content: center;
   gap: 5px;
@@ -414,7 +432,7 @@ h3 { font-size: 20px; font-weight: 700; }
   gap: 12px;
 }
 .belt-list.kyu { grid-template-columns: repeat(6, 1fr); }
-.belt-list.dan { grid-template-columns: repeat(3, 1fr); }
+.belt-list.dan { grid-template-columns: repeat(4, 1fr); }
 
 .belt-card {
   background: var(--parchment);
@@ -468,6 +486,11 @@ h3 { font-size: 20px; font-weight: 700; }
   background:
     repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0 2px, transparent 2px 7px),
     repeating-linear-gradient(90deg, #b02832 0 26px, #f2efe6 26px 52px);
+}
+.belt-kuroaka {
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 7px),
+    repeating-linear-gradient(90deg, #20201e 0 26px, #b02832 26px 52px);
 }
 
 /* ═══════════ Instructors ═══════════ */
@@ -565,6 +588,8 @@ h3 { font-size: 20px; font-weight: 700; }
 .camp-meta strong { font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; color: #8f9678; }
 .camp-meta span { font-weight: 700; font-size: 16px; }
 .camp-meta a { color: #e0a284; }
+/* the camp email is the one unbreakable string wider than a 320px screen */
+.camp-meta span, .camp-meta a { overflow-wrap: anywhere; }
 
 /* ═══════════ Sister clubs & community links ═══════════ */
 
@@ -644,9 +669,11 @@ h3 { font-size: 20px; font-weight: 700; }
   .contact-grid { grid-template-columns: 1fr; }
   .staff-card.lead { grid-column: 1 / -1; }
   .belt-list.kyu { grid-template-columns: repeat(3, 1fr); }
+  .belt-list.dan { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 780px) {
+  .brand { flex: 0 1 auto; } /* shrink + ellipsize the tagline before anything else gives */
   .site-nav {
     position: fixed;
     top: 68px;
@@ -661,6 +688,12 @@ h3 { font-size: 20px; font-weight: 700; }
     padding: 10px;
     display: none;
     z-index: 60;
+    /* short viewports (landscape phones, SE-class screens): the menu
+       scrolls itself instead of clipping its last links */
+    max-height: calc(100vh - 80px);
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
   .site-nav.open { display: flex; }
   .site-nav a { padding: 13px 14px; font-size: 15px; }
@@ -715,8 +748,8 @@ h3 { font-size: 20px; font-weight: 700; }
 .game-wrap .jg-frame { border-color: var(--line); }
 
 /* anchor jumps must clear the sticky header at every breakpoint */
-.section { scroll-margin-top: 84px; }
+.section, #main { scroll-margin-top: 84px; }
 /* mid widths: the nav wraps to a second row and the sticky header grows */
 @media (min-width: 781px) and (max-width: 1159px) {
-  .section { scroll-margin-top: 126px; }
+  .section, #main { scroll-margin-top: 126px; }
 }

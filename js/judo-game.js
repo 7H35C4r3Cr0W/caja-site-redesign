@@ -538,29 +538,27 @@
     var ref = { vis: 0, arm: 0, armTarget: 0, mode: "none" }; // arm: 0 down, 1 side, 2 up, 3 head-scratch
 
     /* ── "TOASTY!" corner cameo for near-perfect throws ──
-       Drop real assets next to the page — toasty.jpg (or .png) and
-       toasty.mp3 (or .ogg/.wav) — and the cameo uses them automatically.
-       Without them it falls back to the drawn face + synth squeal. */
+       Opt-in cameo assets: point data-toasty-img / data-toasty-audio on the
+       mount element at real files, e.g.
+       <div data-judo-game data-toasty-img="images/toasty.jpg"></div>.
+       Without the attributes no requests are made and the cameo falls back
+       to the drawn face + synth squeal. */
     var toastyT = -1;   // <0 idle; else seconds since trigger
     var toastyImg = null, toastyAudio = null;
     (function loadToastyAssets() {
-      var imgs = ["toasty.jpg", "toasty.png"];
-      var auds = ["toasty.mp3", "toasty.ogg", "toasty.wav"];
-      (function tryImg(i) {
-        if (i >= imgs.length) return;
+      var imgSrc = host.getAttribute("data-toasty-img");
+      if (imgSrc) {
         var im = new Image();
         im.onload = function () { toastyImg = im; };
-        im.onerror = function () { tryImg(i + 1); };
-        im.src = imgs[i];
-      })(0);
-      (function tryAud(i) {
-        if (i >= auds.length) return;
+        im.src = imgSrc;
+      }
+      var audSrc = host.getAttribute("data-toasty-audio");
+      if (audSrc) {
         var a = document.createElement("audio");
         a.preload = "auto";
         a.oncanplaythrough = function () { toastyAudio = a; };
-        a.onerror = function () { tryAud(i + 1); };
-        a.src = auds[i];
-      })(0);
+        a.src = audSrc;
+      }
     })();
     function triggerToasty() {
       toastyT = 0;

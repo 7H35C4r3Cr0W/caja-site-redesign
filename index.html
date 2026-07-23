@@ -6,10 +6,22 @@
 <meta name="description" content="Carolina's American Judo Association (CAJA) — judo classes for kids and adults in Matthews, NC. First session free. Home of the Greatest Camp on Earth." />
 <meta name="theme-color" content="#211b15" />
 <title>CAJA — Carolina's American Judo Association · Judo in Matthews, NC</title>
+<meta property="og:title" content="CAJA — Carolina's American Judo Association · Judo in Matthews, NC" />
+<meta property="og:description" content="Judo classes for kids and adults in Matthews, NC. First session free. Home of the Greatest Camp on Earth." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://7h35c4r3cr0w.github.io/caja-site-redesign/" />
+<meta property="og:image" content="https://7h35c4r3cr0w.github.io/caja-site-redesign/images/team-photo.jpg" />
+<meta property="og:image:width" content="1800" />
+<meta property="og:image:height" content="859" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23bf5b3d'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23f7efe0' font-family='serif' font-weight='bold'%3E柔%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png" />
+<link rel="apple-touch-icon" href="images/icon-180.png" />
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- ═══════════ Header ═══════════ -->
 <header class="site-header" id="top">
@@ -21,6 +33,9 @@
         <small>Carolina's American Judo Association</small>
       </span>
     </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="site-nav" id="siteNav" aria-label="Main">
       <a href="#programs">Programs</a>
       <a href="#flashcards">Flashcards</a>
@@ -33,13 +48,10 @@
       <a href="#community">Community</a>
       <a class="nav-cta" href="#visit">Free First Class</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 
-<main>
+<main id="main" tabindex="-1">
 
 <!-- ═══════════ Hero ═══════════ -->
 <section class="hero">
@@ -56,17 +68,23 @@
     </div>
     <ul class="hero-facts" aria-label="Quick facts">
       <li><strong>150+</strong><span>active members</span></li>
-      <li><strong>60+</strong><span>years of combined dan-grade coaching</span></li>
+      <li><strong>1957</strong><span>the year our head coach first stepped on the mat</span></li>
       <li><strong>1st</strong><span>session always free — gi provided</span></li>
     </ul>
   </div>
   <div class="hero-panel" aria-hidden="true">
     <div class="hero-card">
-      <img src="images/seoi-nage.gif" alt="" />
+      <picture>
+        <source srcset="images/seoi-nage-still.png" media="(prefers-reduced-motion: reduce)" />
+        <img src="images/seoi-nage.gif" alt="" />
+      </picture>
       <span>Seoi Nage · 背負投</span>
     </div>
     <div class="hero-card offset">
-      <img src="images/uchi_mata.gif" alt="" />
+      <picture>
+        <source srcset="images/uchi_mata-still.png" media="(prefers-reduced-motion: reduce)" />
+        <img src="images/uchi_mata.gif" alt="" />
+      </picture>
       <span>Uchi Mata · 内股</span>
     </div>
   </div>
@@ -123,8 +141,8 @@
       </div>
     </div>
     <div class="split-media device-duo">
-      <img class="shot desktop" src="images/flashcards-desktop.png" alt="Flashcards app on desktop — quiz setup, stats, and study modes" loading="lazy" />
-      <img class="shot phone" src="images/flashcards-phone.png" alt="Flashcards app on a phone" loading="lazy" />
+      <img class="shot desktop" src="images/flashcards-desktop.webp" alt="Flashcards app on desktop — quiz setup, stats, and study modes" loading="lazy" />
+      <img class="shot phone" src="images/flashcards-phone.webp" alt="Flashcards app on a phone" loading="lazy" />
     </div>
   </div>
 </section>
@@ -147,7 +165,7 @@
 <!-- ═══════════ Etiquette ═══════════ -->
 <section class="section" id="etiquette">
   <header class="section-head">
-    <p class="eyebrow">Dojo etiquette · 礼儀</p>
+    <p class="eyebrow">Dojo etiquette · <span lang="ja">礼儀</span></p>
     <h2>How we carry ourselves</h2>
     <p class="section-sub">Judo begins and ends with respect. New to the dojo? These five habits cover almost everything.</p>
   </header>
@@ -197,7 +215,7 @@
   <div class="rank-groups">
     <div class="rank-group">
       <h3 class="rank-group-title">Kyu <span lang="ja">級</span> · student grades</h3>
-      <ol class="belt-list kyu">
+      <ol class="belt-list kyu" role="list">
         <li class="belt-card">
           <span class="belt" style="--belt-c:#f2efe6" aria-hidden="true"></span>
           <strong>White</strong><span class="belt-sub">Rokkyu · 6th kyu</span>
@@ -227,10 +245,14 @@
 
     <div class="rank-group">
       <h3 class="rank-group-title">Dan <span lang="ja">段</span> · black-belt grades</h3>
-      <ol class="belt-list dan">
+      <ol class="belt-list dan" role="list">
         <li class="belt-card">
           <span class="belt" style="--belt-c:#20201e" aria-hidden="true"></span>
-          <strong>Black</strong><span class="belt-sub">Shodan – Godan · 1st – 5th dan</span>
+          <strong>Black</strong><span class="belt-sub">Shodan – Sandan · 1st – 3rd dan</span>
+        </li>
+        <li class="belt-card">
+          <span class="belt belt-kuroaka" aria-hidden="true"></span>
+          <strong>Black &amp; Red</strong><span class="belt-sub">Yondan – Godan · 4th – 5th dan</span>
         </li>
         <li class="belt-card">
           <span class="belt belt-kohaku" aria-hidden="true"></span>
@@ -259,113 +281,113 @@
   </div>
 
   <div class="spotlight">
-    <img src="images/spotlight-tamburello.jpg" alt="Joseph Tamburello smiling and holding up a gold medal" loading="lazy" />
+    <img src="images/spotlight-tamburello.jpg" alt="Joey Tamburello smiling and holding up a gold medal" loading="lazy" />
     <div class="spotlight-text">
       <p class="eyebrow">Community spotlight</p>
-      <h3>Congratulations, Joseph Tamburello!</h3>
+      <h3>Congratulations, Joey Tamburello!</h3>
       <p>−73kg M2 Champion at the 2026 USA Judo Senior Nationals in Albuquerque, New Mexico. 🥇</p>
     </div>
   </div>
 
   <div class="staff-grid">
     <article class="staff-card lead">
-      <span class="avatar has-photo"><img src="images/instructors/pat-szrejter.jpg" alt="Patrick Szrejter" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/pat-szrejter.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Patrick Szrejter</h3>
       <p class="rank">8th Dan · Head Coach</p>
       <p class="bio">On the mat since 1957, with competitive years across the U.S. and three in Europe. National Referee and Kata Instructor, leading CAJA's 150-plus members.</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/dana-rucker.jpg" alt="Dana Rucker" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/dana-rucker.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Dana Rucker</h3>
       <p class="rank">6th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/brian-dillman.jpg" alt="Brian Dillmann" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/brian-dillman.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Brian Dillmann</h3>
       <p class="rank">4th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/jason-tacker.jpg" alt="Jason Tacker" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/jason-tacker.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Jason Tacker</h3>
       <p class="rank">4th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/joseph-tamburello.jpg" alt="Joey Tamburello" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/joseph-tamburello.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Joey Tamburello</h3>
       <p class="rank">5th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/javier-guedez.jpg" alt="Javier Guédez" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/javier-guedez.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Javier Guédez</h3>
       <p class="rank">4th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/allan-hernandez.jpg" alt="Allan Hernandez" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/allan-hernandez.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Allan Hernandez</h3>
       <p class="rank">5th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/samuel-samiezadeh.jpg" alt="Sami Samiezadeh" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/samuel-samiezadeh.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Sami Samiezadeh</h3>
       <p class="rank">2nd Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/richard-troy.jpg" alt="Richard Troy" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/richard-troy.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Richard Troy</h3>
       <p class="rank">4th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/mike-casper.jpg" alt="Mike Casper" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/mike-casper.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Mike Casper</h3>
       <p class="rank">1st Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/artur-minasyan.jpg" alt="Arthur Minasyan" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/artur-minasyan.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Arthur Minasyan</h3>
       <p class="rank">1st Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/venancio-pedrosa.jpg" alt="Venancio Pedrosa" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/venancio-pedrosa.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Venancio Pedrosa</h3>
       <p class="rank">1st Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/joe-ragan.jpg" alt="Joe Ragan" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/joe-ragan.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Joe Ragan</h3>
       <p class="rank">5th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar has-photo"><img src="images/instructors/andy-cudahy.jpg" alt="Andy Cudahy" /></span>
+      <span class="avatar has-photo"><img src="images/instructors/andy-cudahy.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Andy Cudahy</h3>
       <p class="rank">4th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar" data-initials="ES" aria-hidden="true"></span>
+      <span class="avatar has-photo"><img src="images/instructors/edward-shirey.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Edward Shirey</h3>
       <p class="rank">8th Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar" data-initials="JW" aria-hidden="true"></span>
+      <span class="avatar has-photo"><img src="images/instructors/jonathan-welton.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Jonathan Welton</h3>
       <p class="rank">1st Dan</p>
     </article>
     <article class="staff-card">
-      <span class="avatar" data-initials="EL" aria-hidden="true"></span>
+      <span class="avatar has-photo"><img src="images/instructors/eric-ly.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Eric Ly</h3>
-      <p class="rank">Ikyu</p>
+      <p class="rank">Ikkyu</p>
     </article>
     <article class="staff-card">
-      <span class="avatar" data-initials="AG" aria-hidden="true"></span>
+      <span class="avatar has-photo"><img src="images/instructors/andrew-greenburg.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Andrew Greenburg</h3>
-      <p class="rank">Ikyu</p>
+      <p class="rank">Ikkyu</p>
     </article>
     <article class="staff-card">
-      <span class="avatar" data-initials="DK" aria-hidden="true"></span>
+      <span class="avatar has-photo"><img src="images/instructors/dustin-kirkley.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Dustin Kirkley</h3>
-      <p class="rank">Sonkyu</p>
+      <p class="rank">Sankyu</p>
     </article>
     <article class="staff-card">
-      <span class="avatar" data-initials="DF" aria-hidden="true"></span>
+      <span class="avatar has-photo"><img src="images/instructors/dalton-farriss.jpg" alt="" loading="lazy" decoding="async" /></span>
       <h3>Dalton Farriss</h3>
       <p class="rank">Yonkyu</p>
     </article>
@@ -397,8 +419,20 @@
     </div>
     <div class="split-media">
       <div class="about-tiles" aria-hidden="true">
-        <div class="about-tile"><img src="images/osoto_gari.gif" alt="" /><span>Osoto Gari</span></div>
-        <div class="about-tile"><img src="images/tomoe_nage.gif" alt="" /><span>Tomoe Nage</span></div>
+        <div class="about-tile">
+          <picture>
+            <source srcset="images/osoto_gari-still.png" media="(prefers-reduced-motion: reduce)" />
+            <img src="images/osoto_gari.gif" alt="" loading="lazy" />
+          </picture>
+          <span>Osoto Gari</span>
+        </div>
+        <div class="about-tile">
+          <picture>
+            <source srcset="images/tomoe_nage-still.png" media="(prefers-reduced-motion: reduce)" />
+            <img src="images/tomoe_nage.gif" alt="" loading="lazy" />
+          </picture>
+          <span>Tomoe Nage</span>
+        </div>
       </div>
     </div>
   </div>
@@ -509,6 +543,9 @@
     <p><strong>CAJA</strong> · Carolina's American Judo Association · Matthews, NC</p>
     <p><span lang="ja">精力善用 · 自他共栄</span> — Maximum efficiency, mutual welfare.</p>
     <p class="fineprint">Design sample — content placeholders to be finalized with the club.</p>
+    <p class="fineprint credit">Made by Andre Boyle ·
+      <a href="https://github.com/7H35C4r3Cr0W" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="mailto:andrecboyle@outlook.com">andrecboyle@outlook.com</a></p>
   </div>
 </footer>
 
