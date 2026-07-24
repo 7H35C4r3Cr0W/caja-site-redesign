@@ -26,7 +26,7 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 │               flashcards app — js/judo-game.js)          │
 ├──────────────────────────────────────────────────────────┤
 │ ETIQUETTE     6 cards: bow / gi / hygiene / mat /        │
-│               sensei & sempai / the path                 │
+│               sensei & senpai / the path                 │
 ├──────────────────────────────────────────────────────────┤
 │ RANKS         kyu & dan belt chart on parchment cards    │
 ├──────────────────────────────────────────────────────────┤

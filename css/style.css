@@ -431,7 +431,7 @@ h3 { font-size: 20px; font-weight: 700; }
   display: grid;
   gap: 12px;
 }
-.belt-list.kyu { grid-template-columns: repeat(6, 1fr); }
+.belt-list.kyu { grid-template-columns: repeat(5, 1fr); }
 .belt-list.dan { grid-template-columns: repeat(4, 1fr); }
 
 .belt-card {
