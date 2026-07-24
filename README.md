@@ -18,7 +18,7 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 │ HERO    headline + "first class free" CTA + quick facts  │
 │         floating technique-animation cards               │
 ├──────────────────────────────────────────────────────────┤
-│ PROGRAMS      [ Kids Tue/Thu 6–7p ] [ Adults M–Sa ]      │
+│ PROGRAMS      [ Kids Tue–Thu 6–7p ] [ Adults M–Th+Sa ]   │
 ├──────────────────────────────────────────────────────────┤
 │ FLASHCARDS    copy + app screenshots → live app link     │
 ├──────────────────────────────────────────────────────────┤
