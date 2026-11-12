@@ -34,6 +34,7 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 │               scoring · throw-name vocabulary            │
 ├──────────────────────────────────────────────────────────┤
 │ RANKS         kyu & dan belt chart on parchment cards    │
+│               + ATJA kyu syllabus, one row per belt      │
 │               + ATJA promotion resources                 │
 ├──────────────────────────────────────────────────────────┤
 │ INSTRUCTORS   team photo + spotlight + 20 instructor     │
@@ -63,8 +64,10 @@ Single-page for the sample; each section can later split into its own page
 - **Basics section** — Sensei Sami's *Basics of Judo* class notes; scoring per the IJF's 2025 rules
   (yuko reinstated). The deck's own images and clips are third-party footage, so only its text and its
   YouTube links are used
-- **Promotion resources** — atja.org (CAJA is an ATJA member club); the Kyu Curriculum & Exam needs an
-  ATJA member login
+- **Kyu chart & syllabus** — the ATJA Judo Kyu Curriculum (v2.0): 6th kyu yellow, 5th orange, 4th green,
+  3rd–1st brown, white = beginner. The per-belt lists summarize that form; the form itself stays behind
+  ATJA's member login and is only linked, not republished
+- **Promotion resources** — atja.org (CAJA is an ATJA member club)
 - **Camp section** — greatestcamp.com (June 24–26 2027, Javier Guédez headline)
 - **Flashcards** — https://7h35c4r3cr0w.github.io/Judo-Throw-Flashcards/ (linked live app,
   screenshots in `images/`)

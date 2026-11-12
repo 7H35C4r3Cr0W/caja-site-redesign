@@ -132,8 +132,8 @@
         and contest scoring. It works offline and installs to your phone like a native app.
       </p>
       <ul class="checklist">
-        <li>All 47 Kodokan throws, animated</li>
-        <li>81 judo terms — Japanese, kanji &amp; English, as flashcards and quizzes</li>
+        <li>All 47 Kodokan throws, animated — each ATJA exam throw tagged with its kyu grade</li>
+        <li>102 judo terms — Japanese, kanji &amp; English, as flashcards and quizzes</li>
         <li>Smart drills that target your weakest techniques</li>
         <li>Works offline — study at camp, on the road, anywhere</li>
       </ul>
@@ -349,23 +349,23 @@
       <ol class="belt-list kyu" role="list">
         <li class="belt-card">
           <span class="belt" style="--belt-c:#f2efe6" aria-hidden="true"></span>
-          <strong>White</strong><span class="belt-sub">Rokkyu · 6th kyu</span>
+          <strong>White</strong><span class="belt-sub">Beginner · no grade yet</span>
         </li>
         <li class="belt-card">
           <span class="belt" style="--belt-c:#e7c422" aria-hidden="true"></span>
-          <strong>Yellow</strong><span class="belt-sub">Gokyu · 5th kyu</span>
+          <strong>Yellow</strong><span class="belt-sub">Rokkyu · 6th kyu</span>
         </li>
         <li class="belt-card">
           <span class="belt" style="--belt-c:#e0822c" aria-hidden="true"></span>
-          <strong>Orange</strong><span class="belt-sub">Yonkyu · 4th kyu</span>
+          <strong>Orange</strong><span class="belt-sub">Gokyu · 5th kyu</span>
         </li>
         <li class="belt-card">
           <span class="belt" style="--belt-c:#3d8b3d" aria-hidden="true"></span>
-          <strong>Green</strong><span class="belt-sub">Sankyu · 3rd kyu</span>
+          <strong>Green</strong><span class="belt-sub">Yonkyu · 4th kyu</span>
         </li>
         <li class="belt-card">
           <span class="belt" style="--belt-c:#6f4a2a" aria-hidden="true"></span>
-          <strong>Brown</strong><span class="belt-sub">Ikkyu · 1st kyu</span>
+          <strong>Brown</strong><span class="belt-sub">Sankyu – Ikkyu · 3rd – 1st kyu</span>
         </li>
       </ol>
     </div>
@@ -392,22 +392,143 @@
       </ol>
     </div>
   </div>
-  <p class="fineprint">Senior progression shown — junior programs add in-between belts along the way.</p>
+  <p class="fineprint">Senior grades shown, per the ATJA kyu curriculum — juniors add blue and purple belts along the way.</p>
 
-  <div class="promo">
-    <div class="promo-copy">
-      <h3>Testing for your next belt</h3>
-      <p>CAJA is a member club of the <strong>American Traditional Jujutsu Association (ATJA)</strong>,
-      which publishes the judo curriculum, exams, and promotion forms.</p>
+  <!-- Syllabus: ATJA Judo Kyu Curriculum v2.0 (senior grades). Each grade
+       adds these techniques to everything learned before. -->
+  <div class="syllabus" id="syllabus">
+    <header class="syllabus-head">
+      <h3>What each belt is tested on</h3>
+      <p>CAJA is a member club of the <strong>American Traditional Jujutsu Association (ATJA)</strong>
+      and tests to its Judo Kyu Curriculum. Each grade adds the techniques below to everything that came before.</p>
+    </header>
+
+    <div class="kyu-list">
+      <details class="kyu-item" open>
+        <summary>
+          <span class="belt" style="--belt-c:#e7c422" aria-hidden="true"></span>
+          <span class="kyu-name"><strong>Yellow</strong><span>Rokkyu · 6th kyu</span></span>
+          <span class="kyu-gist">First throws, first pin and choke, falling safely</span>
+        </summary>
+        <dl class="req-grid">
+          <div class="wide"><dt>Throws</dt><dd>O-goshi · O-soto-gari · Hiza-guruma · Seoi-nage (ippon or morote)</dd></div>
+          <div><dt>Counter</dt><dd>to O-goshi</dd></div>
+          <div><dt>Pin</dt><dd>Kesa-gatame</dd></div>
+          <div><dt>Escape</dt><dd>Kesa-gatame #1</dd></div>
+          <div><dt>Choke</dt><dd>Hadaka-jime</dd></div>
+          <div><dt>Breakfalls</dt><dd>Back (kōhō ukemi) · side (yoko ukemi)</dd></div>
+          <div class="wide"><dt>Show</dt><dd>How and when to bow · how to sit properly · how to tie your belt</dd></div>
+        </dl>
+      </details>
+
+      <details class="kyu-item">
+        <summary>
+          <span class="belt" style="--belt-c:#e0822c" aria-hidden="true"></span>
+          <span class="kyu-name"><strong>Orange</strong><span>Gokyu · 5th kyu</span></span>
+          <span class="kyu-gist">First combinations, cross chokes, rolling breakfalls</span>
+        </summary>
+        <dl class="req-grid">
+          <div class="wide"><dt>Throws</dt><dd>De-ashi-harai · O-uchi-gari · Sasae-tsurikomi-ashi · Uki-goshi</dd></div>
+          <div><dt>Combinations</dt><dd>with O-goshi · with Seoi-nage</dd></div>
+          <div><dt>Counter</dt><dd>to O-soto-gari</dd></div>
+          <div><dt>Pins</dt><dd>Yoko-shiho-gatame · Kami-shiho-gatame</dd></div>
+          <div><dt>Escape</dt><dd>Yoko-shiho-gatame #1</dd></div>
+          <div><dt>Choke</dt><dd>Juji-jime — nami, kata &amp; gyaku</dd></div>
+          <div><dt>Arm lock</dt><dd>Ude-garami</dd></div>
+          <div><dt>Ground entry</dt><dd>Hands &amp; knees, top #1</dd></div>
+          <div><dt>Breakfalls</dt><dd>Front (mae ukemi) · forward roll (zenpō kaiten)</dd></div>
+          <div><dt>Show</dt><dd>Tsugi-ashi · ayumi-ashi · tai-sabaki</dd></div>
+        </dl>
+      </details>
+
+      <details class="kyu-item">
+        <summary>
+          <span class="belt" style="--belt-c:#3d8b3d" aria-hidden="true"></span>
+          <span class="kyu-name"><strong>Green</strong><span>Yonkyu · 4th kyu</span></span>
+          <span class="kyu-gist">Harai-goshi, the sliding lapel choke, the straight arm lock</span>
+        </summary>
+        <dl class="req-grid">
+          <div class="wide"><dt>Throws</dt><dd>Tai-otoshi · Ko-soto-gari · Harai-goshi · Ko-uchi-gari</dd></div>
+          <div><dt>Combination</dt><dd>with Hiza-guruma</dd></div>
+          <div><dt>Counters</dt><dd>to Seoi-nage · to Hiza-guruma</dd></div>
+          <div><dt>Pin</dt><dd>Kuzure-kesa-gatame</dd></div>
+          <div><dt>Escape</dt><dd>Kami-shiho-gatame #1</dd></div>
+          <div><dt>Choke</dt><dd>Okuri-eri-jime</dd></div>
+          <div><dt>Arm lock</dt><dd>Ude-gatame</dd></div>
+          <div><dt>Ground entries</dt><dd>Hands &amp; knees, bottom #1 · legs around, top #1</dd></div>
+          <div><dt>Show</dt><dd>Shizen-hontai — natural stance</dd></div>
+        </dl>
+      </details>
+
+      <details class="kyu-item">
+        <summary>
+          <span class="belt" style="--belt-c:#6f4a2a" aria-hidden="true"></span>
+          <span class="kyu-name"><strong>Brown</strong><span>Sankyu · 3rd kyu</span></span>
+          <span class="kyu-gist">Uchi-mata, Juji-gatame, the directions of kuzushi</span>
+        </summary>
+        <dl class="req-grid">
+          <div class="wide"><dt>Throws</dt><dd>Koshi-guruma · Uchi-mata · Ko-soto-gake · Tsuri-goshi</dd></div>
+          <div><dt>Combination</dt><dd>with De-ashi-harai</dd></div>
+          <div><dt>Counters</dt><dd>to De-ashi-harai · to Ko-uchi-gari</dd></div>
+          <div><dt>Pin</dt><dd>Kuzure-yoko-shiho-gatame</dd></div>
+          <div><dt>Escape</dt><dd>Kesa-gatame #2</dd></div>
+          <div><dt>Choke</dt><dd>Kataha-jime</dd></div>
+          <div><dt>Arm lock</dt><dd>Juji-gatame</dd></div>
+          <div><dt>Ground entries</dt><dd>Legs around, bottom #1 · hands &amp; knees, top #2</dd></div>
+          <div class="wide"><dt>Show</dt><dd>Jigo-hontai — defensive stance · the directions of off-balancing</dd></div>
+        </dl>
+      </details>
+
+      <details class="kyu-item">
+        <summary>
+          <span class="belt" style="--belt-c:#6f4a2a" aria-hidden="true"></span>
+          <span class="kyu-name"><strong>Brown</strong><span>Nikyu · 2nd kyu</span></span>
+          <span class="kyu-gist">Tomoe-nage, Kata-gatame, refereeing a match</span>
+        </summary>
+        <dl class="req-grid">
+          <div class="wide"><dt>Throws</dt><dd>Okuri-ashi-harai · Tomoe-nage · Tsurikomi-goshi · Ashi-guruma</dd></div>
+          <div><dt>Combination</dt><dd>with O-uchi-gari</dd></div>
+          <div><dt>Counter</dt><dd>to Tsuri-goshi</dd></div>
+          <div><dt>Pin</dt><dd>Kata-gatame</dd></div>
+          <div><dt>Escape</dt><dd>Yoko-shiho-gatame #2</dd></div>
+          <div><dt>Choke</dt><dd>Ryote-jime</dd></div>
+          <div><dt>Arm lock</dt><dd>Hiza-gatame</dd></div>
+          <div><dt>Ground entries</dt><dd>Hands &amp; knees, bottom #2 · legs around, top #2</dd></div>
+          <div class="wide"><dt>Show</dt><dd>How to referee a match</dd></div>
+        </dl>
+      </details>
+
+      <details class="kyu-item">
+        <summary>
+          <span class="belt" style="--belt-c:#6f4a2a" aria-hidden="true"></span>
+          <span class="kyu-name"><strong>Brown</strong><span>Ikkyu · 1st kyu</span></span>
+          <span class="kyu-gist">Kata-guruma, side sacrifice throws, the triangle choke and lock</span>
+        </summary>
+        <dl class="req-grid">
+          <div class="wide"><dt>Throws</dt><dd>Yoko-otoshi · Tani-otoshi · Uki-otoshi · Kata-guruma · Soto-makikomi</dd></div>
+          <div><dt>Combinations</dt><dd>with O-soto-gari · with Uchi-mata</dd></div>
+          <div><dt>Counters</dt><dd>to Uchi-mata · to Tai-otoshi</dd></div>
+          <div><dt>Escape</dt><dd>Kata-gatame</dd></div>
+          <div><dt>Choke</dt><dd>Sankaku-jime</dd></div>
+          <div><dt>Arm lock</dt><dd>Sankaku-gatame</dd></div>
+          <div><dt>Ground entry</dt><dd>Legs around, bottom #2</dd></div>
+        </dl>
+      </details>
     </div>
+
+    <p class="syllabus-note">Juniors cover the same syllabus in twelve smaller steps — yellow, orange, green,
+    blue, purple and brown, two per color (the second may carry a stripe) — and leave arm locks for later.
+    Drill any belt's throws in the <a href="https://7h35c4r3cr0w.github.io/Judo-Throw-Flashcards/" target="_blank" rel="noopener">flashcards app</a>:
+    search “6th kyu”, “orange”, and so on.</p>
+
     <div class="resource-grid promo-links">
       <a class="resource-card" href="https://atja.org/about/atja-judo/judo-student-manual/" target="_blank" rel="noopener">
         <span class="r-icon" aria-hidden="true">📖</span>
-        <span class="r-body"><span class="r-title">Judo Student Manual</span><span class="r-url">Requirements for every belt</span></span>
+        <span class="r-body"><span class="r-title">Judo Student Manual</span><span class="r-url">ATJA · belt-by-belt chapters</span></span>
       </a>
       <a class="resource-card" href="https://atja.org/membership/download/666/" target="_blank" rel="noopener">
         <span class="r-icon" aria-hidden="true">📝</span>
-        <span class="r-body"><span class="r-title">Kyu Curriculum &amp; Exam</span><span class="r-url">ATJA member login</span></span>
+        <span class="r-body"><span class="r-title">Kyu Curriculum &amp; Exam</span><span class="r-url">Printable form · ATJA member login</span></span>
       </a>
       <a class="resource-card" href="https://atja.org/about/documents-forms/" target="_blank" rel="noopener">
         <span class="r-icon" aria-hidden="true">🗂️</span>

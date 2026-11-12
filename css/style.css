@@ -856,25 +856,90 @@ h3 { font-size: 20px; font-weight: 700; }
 }
 .vocab-chips b { color: var(--ink); margin-right: 5px; }
 
-/* ═══════════ Ranks: promotion resources ═══════════ */
+/* ═══════════ Ranks: ATJA kyu syllabus ═══════════
+   Native <details> rows — no JS, keyboard- and screen-reader-friendly. */
 
-.promo {
-  margin-top: 34px;
-  padding-top: 30px;
-  border-top: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2.6fr);
-  gap: 18px 32px;
-  align-items: center;
+.syllabus { margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--line); }
+.syllabus-head { max-width: 680px; margin-bottom: 18px; }
+.syllabus-head h3 { margin-bottom: 6px; }
+.syllabus-head p { color: var(--ink-soft); font-size: 14.5px; margin: 0; }
+.syllabus-head strong { color: var(--ink); font-weight: 650; }
+
+.kyu-list { display: grid; gap: 10px; }
+.kyu-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.25s var(--ease);
 }
-.promo-copy h3 { margin-bottom: 6px; }
-.promo-copy p { color: var(--ink-soft); font-size: 14.5px; margin: 0; }
-.promo-copy strong { color: var(--ink); font-weight: 650; }
+.kyu-item[open] { border-color: rgba(191, 91, 61, 0.45); }
+.kyu-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 72px minmax(150px, auto) minmax(0, 1fr) 18px;
+  align-items: center;
+  gap: 4px 18px;
+  min-height: 64px;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+}
+.kyu-item summary::-webkit-details-marker { display: none; }
+/* chevron */
+.kyu-item summary::after {
+  content: "";
+  grid-column: 4;
+  width: 9px;
+  height: 9px;
+  justify-self: center;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform 0.25s var(--ease);
+}
+.kyu-item[open] summary::after { transform: rotate(225deg) translate(-2px, -2px); }
+.kyu-item summary:hover .kyu-gist { color: var(--ink); }
+.kyu-item summary .belt { height: 16px; }
+.kyu-item summary .belt::after { width: 12px; }
+.kyu-name { display: flex; flex-direction: column; line-height: 1.25; }
+.kyu-name strong { font-family: var(--font-display); font-size: 17px; }
+.kyu-name span { color: var(--muted); font-size: 12.5px; }
+.kyu-gist { color: var(--ink-soft); font-size: 14px; transition: color 0.2s; }
+
+.req-grid {
+  margin: 0;
+  padding: 2px 18px 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  border-top: 1px dashed var(--line);
+}
+.req-grid div {
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--line);
+}
+.req-grid div.wide { grid-column: 1 / -1; }
+.req-grid dt {
+  color: var(--accent-text);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.req-grid dd { margin: 0; font-size: 14.5px; }
+
+.syllabus-note { color: var(--muted); font-size: 13.5px; margin: 16px 0 18px; max-width: 760px; }
 .promo-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .promo-links .r-url { white-space: normal; }
 
 @media (max-width: 960px) {
-  .lineup, .vocab, .promo { grid-template-columns: 1fr; }
+  .lineup, .vocab { grid-template-columns: 1fr; }
+  .req-grid { grid-template-columns: 1fr; }
   .lineup-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .family-grid { grid-template-columns: 1fr 1fr; }
   .family-card:last-child { grid-column: 1 / -1; }
@@ -887,6 +952,11 @@ h3 { font-size: 20px; font-weight: 700; }
   .panel { padding: 20px; }
   .score-list li { grid-template-columns: 104px minmax(0, 1fr); }
   .score-list strong [lang="ja"] { display: block; margin: 2px 0 0; }
+  .kyu-item summary { grid-template-columns: 52px minmax(0, 1fr) 18px; padding: 12px 14px; }
+  .kyu-item summary::after { grid-column: 3; grid-row: 1; }
+  .kyu-gist { grid-column: 2 / 3; font-size: 13.5px; }
+  .req-grid { padding: 2px 14px 12px; }
+  .req-grid div { grid-template-columns: 1fr; gap: 1px; }
 }
 
 /* ═══════════ Reveal on scroll ═══════════ */
