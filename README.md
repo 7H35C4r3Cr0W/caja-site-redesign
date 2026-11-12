@@ -12,7 +12,8 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 ```
 ┌──────────────────────────────────────────────────────────┐
 │ HEADER (sticky)  CAJA 柔 | Programs Flashcards Game      │
-│                  Etiquette Ranks Instructors About Camp  │
+│                  Etiquette Basics Ranks Instructors      │
+│                  About Camp                              │
 │                  Community | [CTA]                       │
 ├──────────────────────────────────────────────────────────┤
 │ HERO    headline + "first class free" CTA + quick facts  │
@@ -27,8 +28,13 @@ site is already in place; everything marked "coming" is a placeholder to fill in
 ├──────────────────────────────────────────────────────────┤
 │ ETIQUETTE     6 cards: bow / gi / hygiene / mat /        │
 │               sensei & senpai / the path                 │
+│               + class line-up strip (4 steps)            │
+├──────────────────────────────────────────────────────────┤
+│ BASICS        technique families · anatomy of a throw ·  │
+│               scoring · throw-name vocabulary            │
 ├──────────────────────────────────────────────────────────┤
 │ RANKS         kyu & dan belt chart on parchment cards    │
+│               + ATJA promotion resources                 │
 ├──────────────────────────────────────────────────────────┤
 │ INSTRUCTORS   team photo + spotlight + 20 instructor     │
 │               cards, all with photos (head coach leads)  │
@@ -52,7 +58,13 @@ Single-page for the sample; each section can later split into its own page
 ## Content sources
 
 - **Club info, schedules, contact, staff** — judo-caja.com (home + staff pages)
-- **Etiquette section** — adapted from judointernationalschool.co.uk/judo-etiquette-guide
+- **Etiquette section** — adapted from judointernationalschool.co.uk/judo-etiquette-guide, plus the dojo
+  rules and class line-up from Sensei Sami's *Basics of Judo* class notes (July 2025)
+- **Basics section** — Sensei Sami's *Basics of Judo* class notes; scoring per the IJF's 2025 rules
+  (yuko reinstated). The deck's own images and clips are third-party footage, so only its text and its
+  YouTube links are used
+- **Promotion resources** — atja.org (CAJA is an ATJA member club); the Kyu Curriculum & Exam needs an
+  ATJA member login
 - **Camp section** — greatestcamp.com (June 24–26 2027, Javier Guédez headline)
 - **Flashcards** — https://7h35c4r3cr0w.github.io/Judo-Throw-Flashcards/ (linked live app,
   screenshots in `images/`)
